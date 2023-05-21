@@ -12,7 +12,7 @@ class symlink {
 
    # Now create media.txt under /opt/dba
 
-  file { '/opt/dba/media.txt':
+  file { '/opt/dba/story.txt':
 
     ensure => 'present',
 
@@ -20,7 +20,7 @@ class symlink {
 
 }
 
-node 'stapp01.stratos.xfusioncorp.com', 'stapp02.stratos.xfusioncorp.com', 'stapp03.stratos.xfusioncorp.com' {
+node  'stapp02.stratos.xfusioncorp.com' {
 
   include symlink
 
